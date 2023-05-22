@@ -170,7 +170,7 @@ background-color: white;
 
 }
 
-@media  (max-width: 765px) {
+@media  (max-width:860px) {
     .table{
         border-collapse : collapse;
         width: 100%;
@@ -188,6 +188,9 @@ background-color: white;
         flex-flow: row wrap;
         height: auto;
         width: 100%;
+    }
+    #searchCont,#search{
+        max-width: 70%;
     }
     
 }
