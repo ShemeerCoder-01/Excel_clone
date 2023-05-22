@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Excel_Clone</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="nav-item">File</div>
+        <div id="nav" class="nav-item">Home</div>
+        <div class="nav-item">Tools</div>
+        <div class="nav-item">Help</div>
+    </div>
+    <div id="container">
+        <div id="copyCont">
+            <span id="copyBtn" class="material-icons">content_copy</span>
+            <span id="cutBtn" class="material-icons">content_cut</span>
+            <span id="pasteBtn" class="material-icons">content_paste</span>
+        </div>
+        <div id="fontFamCont">
+            <select id="fontFamily">
+                <option value="monospace">Monospace</option>
+                <option value="cursive">Cursive</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="sans-serif">Sans-Serif</option>
+            </select>
+        </div>
+        <div id="fontSizeCont">
+            <select id="fontSize">
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="22">22</option>
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="30">30</option>
+            </select>
+        </div>
+        <div id="styleCont">
+            <span id="styleFontb" class="material-icons bold">format_bold</span>
+            <span id="styleFonti" class="material-icons italic">format_italic</span>
+            <span id="styleFontu" class="material-icons underlined">format_underlined</span>
+        </div>
+        <div id="alignCont">
+            <span id="left-align" class="material-icons">format_align_left</span>
+            <span id="right-align" class="material-icons">format_align_right</span>
+            <span id="center-align" class="material-icons">format_align_center</span>
+        </div>
+        <div id="colorCont">
+            <div id="colorDiv">
+                <span id="col" class="material-icons">format_color_text</span>
+                <input id="textColor" type="color" />
+            </div>
+            <div id="bgColorDiv">
+                <span id="bgcol" class="material-icons">format_color_fill</span>
+                <input id="bgColor" type="color" />
+            </div>
+        </div>
+        <div id="dowupCont">
+            <span id="download" class="material-icons">cloud_download</span>
+            <span id="upload" class="material-icons">cloud_upload</span> <input type="file" id="jsonFile" accept=".json" >
+        </div>
+        <div id="searchCont">
+            <div id="currCellVal"></div>
+            <div id="textArea">
+                <label for="search"><i>fx</i></label>
+                <input id="search" type="search" />
+            </div>
+        </div>
+    </div>
+    <!-- <div id="searchCont">
+        <div id="currCellVal"></div>
+        <div id="textArea">
+            <label for="search"><i>fx</i></label>
+            <input id="search" type="search" />
+        </div>
+    </div> -->
+    <br>
+
+
+
+
+
+
+    <table class="table">
+        <thead>
+            <tr id="thead-col">
+                <th id="curr" style="background-color: gray;"></th>
+            </tr>
+        </thead>
+        <tbody id="thead-row">
+
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
